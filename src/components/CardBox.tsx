@@ -59,7 +59,7 @@ const CardBox = ({ title, context, img, url }: Props) => {
   `;
   return (
     <div css={card}>
-      <a href={url} target="_blank">
+      <a href={url} target="_blank" rel="noreferrer">
         <figure>
           <img src={`/img/` + img} alt={title} />
         </figure>

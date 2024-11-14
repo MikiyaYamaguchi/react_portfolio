@@ -213,10 +213,20 @@ const Header = () => {
             </Link>
           </div>
           <div css={iconLink}>
-            <a href="#" target="_blank" className="link_x">
+            <a
+              href="https://x.com/mikiya32131569"
+              target="_blank"
+              className="link_x"
+              rel="noreferrer"
+            >
               <img src="/img/icon_x.png" alt="X" />
             </a>
-            <a href="#" target="_blank" className="link_github">
+            <a
+              href="https://github.com/MikiyaYamaguchi"
+              target="_blank"
+              className="link_github"
+              rel="noreferrer"
+            >
               <img src="/img/icon_github.png" alt="X" />
             </a>
           </div>

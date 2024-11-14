@@ -114,19 +114,31 @@ const About = () => {
               <p>趣味：映画鑑賞、筋トレ</p>
               <p>
                 X（旧Twiiter）：
-                <a href="https://twitter.com/mikiya32131569" target="_blank">
+                <a
+                  href="https://twitter.com/mikiya32131569"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   https://twitter.com/mikiya32131569
                 </a>
               </p>
               <p>
                 Git Hub：
-                <a href="https://github.com/MikiyaYamaguchi" target="_blank">
+                <a
+                  href="https://github.com/MikiyaYamaguchi"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   https://github.com/MikiyaYamaguchi
                 </a>
               </p>
               <p>
                 技術ブログ：
-                <a href="https://www.dailyupblog.com/" target="_blank">
+                <a
+                  href="https://www.dailyupblog.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   https://www.dailyupblog.com/
                 </a>
               </p>
@@ -212,7 +224,11 @@ const About = () => {
               <p className="year">2021年</p>
               <p className="context">
                 知識の集積とアウトプットのためにブログサイト「
-                <a href="https://www.dailyupblog.com" target="_blank">
+                <a
+                  href="https://www.dailyupblog.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Daily up
                 </a>
                 」を制作する。
