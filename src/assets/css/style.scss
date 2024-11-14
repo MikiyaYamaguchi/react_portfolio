@@ -1,0 +1,161 @@
+.container {
+  width: calc(100% - 17% - 17%);
+  margin: 0 auto 7%;
+  @media screen and (max-width: 767px) {
+    width: calc(100% - 8% - 8%);
+  }
+  @media screen and (max-width: 430px) {
+    width: calc(100% - 5% - 5%);
+  }
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.8 !important;
+  word-break: break-word;
+  @media screen and (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+
+h1 {
+  font-size: 38px;
+  letter-spacing: 0.1em;
+  margin: 0 0 1.3em;
+  @media screen and (max-width: 767px) {
+    font-size: 26px;
+  }
+}
+
+h2 {
+  font-size: 28px;
+  letter-spacing: 0.1em;
+  margin: 0 0 1.5em;
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0 0 0.7em;
+  @media screen and (max-width: 767px) {
+    font-size: 17px;
+  }
+}
+
+figure {
+  margin: 0;
+  img {
+    max-width: 100%;
+  }
+}
+
+section {
+  margin-bottom: 7%;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 10%;
+  }
+}
+
+.row {
+  &:not(:last-child) {
+    margin-bottom: 4%;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    .col {
+      margin-left: 2%;
+      &:first-child {
+        margin-left: 0;
+      }
+      &.span_12 {
+        width: 100%;
+      }
+      &.span_11 {
+        width: 91.5%;
+      }
+      &.span_10 {
+        width: 83%;
+      }
+      &.span_9 {
+        width: 74.5%;
+      }
+      &.span_8 {
+        width: 66%;
+      }
+      &.span_7 {
+        width: 57.5%;
+      }
+      &.span_6 {
+        width: 49%;
+      }
+      &.span_5 {
+        width: 40.5%;
+      }
+      &.span_4 {
+        width: 32%;
+      }
+      &.span_3 {
+        width: 23.5%;
+      }
+      &.span_2 {
+        width: 15%;
+      }
+    }
+    &.row_inline {
+      flex-wrap: wrap;
+      .col {
+        margin-bottom: 3%;
+        &.span_6 {
+          &:nth-child(2n + 1) {
+            margin-left: 0;
+          }
+        }
+        &.span_5 {
+          &:nth-child(2n + 1) {
+            margin-left: 0;
+          }
+        }
+        &.span_4 {
+          &:nth-child(3n + 1) {
+            margin-left: 0;
+          }
+        }
+        &.span_3 {
+          &:nth-child(4n + 1) {
+            margin-left: 0;
+          }
+        }
+        &.span_2 {
+          &:nth-child(6n + 1) {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .col {
+      margin-bottom: 6%;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sp-only {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pc-only {
+    display: none;
+  }
+}
