@@ -59,7 +59,7 @@ const AniTitle: React.FC<ScrollElementProps> = ({ children }) => {
   `;
 
   const { ref, inView } = useInView({
-    rootMargin: "-170px",
+    rootMargin: "-100px",
     triggerOnce: true,
   });
 
