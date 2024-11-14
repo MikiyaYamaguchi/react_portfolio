@@ -182,7 +182,11 @@ const Home = () => {
   });
   return (
     <div css={mainVisual}>
-      <div ref={ref1} css={inView1 ? MainImgAniActive : MainImgAni}>
+      <div
+        ref={ref1}
+        className="mainImage"
+        css={inView1 ? MainImgAniActive : MainImgAni}
+      >
         <img
           src="/img/main_image.png"
           alt="Y.MIKIYA Portfolio Site"
