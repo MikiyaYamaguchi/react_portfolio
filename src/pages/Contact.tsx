@@ -75,6 +75,7 @@ const Contact = () => {
             action="/thanks"
             netlify-honeypot="bot-field"
           >
+            <input type="hidden" name="form-name" value="Contact" />
             <div className="row">
               <div className="col span_3">
                 <label htmlFor="name">お名前</label>
