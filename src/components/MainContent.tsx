@@ -6,6 +6,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Home from "../pages/Home";
+import NotFound from "../pages/NotFound";
 import Works from "../pages/Works";
 
 const MainContent = () => {
@@ -103,6 +104,7 @@ const MainContent = () => {
           <Route path="/about" element={<About />} />
           <Route path="/works/" element={<Works />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </div>
     </div>
