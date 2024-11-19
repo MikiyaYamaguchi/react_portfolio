@@ -69,6 +69,7 @@ const Contact = () => {
         <FadeIn>
           <form
             css={Form}
+            action="/thanks"
             name="contact"
             method="POST"
             data-netlify="true"
