@@ -7,6 +7,7 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
+import Thanks from "../pages/Thanks";
 import Works from "../pages/Works";
 
 const MainContent = () => {
@@ -104,6 +105,7 @@ const MainContent = () => {
           <Route path="/about" element={<About />} />
           <Route path="/works/" element={<Works />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/thanks" element={<Thanks />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </div>
