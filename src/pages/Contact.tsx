@@ -68,13 +68,7 @@ const Contact = () => {
       </section>
       <section>
         <FadeIn>
-          <form
-            css={Form}
-            action=""
-            name="contact"
-            method="POST"
-            data-netlify="true"
-          >
+          <form css={Form} name="contact" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="contact" />
             <div className="row">
               <div className="col span_3">
