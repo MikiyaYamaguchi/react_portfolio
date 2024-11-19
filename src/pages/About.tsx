@@ -100,7 +100,7 @@ const About = () => {
           <div className="col span_6">
             <FadeIn>
               <figure>
-                <img src="/img/about_img.jpg" alt="Y.MIKIYA" />
+                <img src="/img/about_img.jpg" alt="Y.MIKIYA" loading="lazy" />
               </figure>
             </FadeIn>
           </div>

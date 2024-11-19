@@ -61,7 +61,7 @@ const CardBox = ({ title, context, img, url }: Props) => {
     <div css={card}>
       <a href={url} target="_blank" rel="noreferrer">
         <figure>
-          <img src={`/img/` + img} alt={title} />
+          <img src={`/img/` + img} alt={title} loading="lazy" />
         </figure>
         <p className="title">{title}</p>
         <p>{context}</p>

@@ -191,11 +191,13 @@ const Home = () => {
           src="/img/main_image.png"
           alt="Y.MIKIYA Portfolio Site"
           className="pc-only"
+          loading="lazy"
         />
         <img
           src="/img/sp_main_image.png"
           alt="Y.MIKIYA Portfolio Site"
           className="sp-only"
+          loading="lazy"
         />
       </div>
       <div className="mainCopy">

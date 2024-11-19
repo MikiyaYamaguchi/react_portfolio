@@ -194,7 +194,7 @@ const Header = () => {
       <div css={Container}>
         <h1 css={Title}>
           <Link to="/">
-            <img src="/img/logo.png" alt="Y.MIKIYA.COM" />
+            <img src="/img/logo.png" alt="Y.MIKIYA.COM" loading="lazy" />
           </Link>
         </h1>
         <div css={navWrap}>
@@ -219,7 +219,7 @@ const Header = () => {
               className="link_x"
               rel="noreferrer"
             >
-              <img src="/img/icon_x.png" alt="X" />
+              <img src="/img/icon_x.png" alt="X" loading="lazy" />
             </a>
             <a
               href="https://github.com/MikiyaYamaguchi"
@@ -227,7 +227,7 @@ const Header = () => {
               className="link_github"
               rel="noreferrer"
             >
-              <img src="/img/icon_github.png" alt="X" />
+              <img src="/img/icon_github.png" alt="X" loading="lazy" />
             </a>
           </div>
           <div
