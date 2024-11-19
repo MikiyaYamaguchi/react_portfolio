@@ -73,6 +73,7 @@ const Contact = () => {
             method="POST"
             data-netlify="true"
             action="/success"
+            netlify-honeypot="bot-field"
           >
             <input type="hidden" name="form-name" value="contact" />
             <div className="row">
@@ -114,6 +115,11 @@ const Contact = () => {
             </div>
             <div className="row">
               <div className="col span_12">
+                <input
+                  type="text"
+                  name="bot-field"
+                  style={{ display: "none" }}
+                />
                 <button type="submit">送信する</button>
               </div>
             </div>
