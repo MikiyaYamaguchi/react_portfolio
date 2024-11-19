@@ -1,8 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-
 import AniTitle from "../components/AniTitle";
-
 import FadeIn from "../components/FadeIn";
 
 const Contact = () => {
@@ -42,6 +40,7 @@ const Contact = () => {
       }
     }
   `;
+
   return (
     <div className="container">
       <h1>
@@ -68,35 +67,41 @@ const Contact = () => {
       </section>
       <section>
         <FadeIn>
-          <form css={Form} name="contact" method="POST" data-netlify="true">
+          <form
+            css={Form}
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            action="/success"
+          >
             <input type="hidden" name="form-name" value="contact" />
             <div className="row">
               <div className="col span_3">
-                <p>お名前</p>
+                <label htmlFor="name">お名前</label>
               </div>
               <div className="col span_9">
-                <input type="text" name="name" required />
+                <input type="text" name="name" id="name" required />
               </div>
             </div>
             <div className="row">
               <div className="col span_3">
-                <p>メールアドレス</p>
+                <label htmlFor="email">メールアドレス</label>
               </div>
               <div className="col span_9">
-                <input type="email" name="email" required />
+                <input type="email" name="email" id="email" required />
               </div>
             </div>
             <div className="row">
               <div className="col span_3">
-                <p>電話番号</p>
+                <label htmlFor="tel">電話番号</label>
               </div>
               <div className="col span_9">
-                <input type="tel" name="tel" required />
+                <input type="tel" name="tel" id="tel" required />
               </div>
             </div>
             <div className="row">
               <div className="col span_3">
-                <p>お問い合わせ内容</p>
+                <label htmlFor="message">お問い合わせ内容</label>
               </div>
               <div className="col span_9">
                 <textarea
@@ -109,7 +114,7 @@ const Contact = () => {
             </div>
             <div className="row">
               <div className="col span_12">
-                <button>送信する</button>
+                <button type="submit">送信する</button>
               </div>
             </div>
           </form>
