@@ -1,7 +1,10 @@
 /** @jsxImportSource @emotion/react */
 import { css, keyframes } from "@emotion/react";
 
+import { useEffect, useState } from "react";
+
 const CoverPage = () => {
+  const [isVisible, setIsVisible] = useState(true);
   const slideUp = keyframes`
 		0%{
 			transform: translateY(0);
@@ -34,6 +37,14 @@ const CoverPage = () => {
 			opacity: 1;
 		}
 	`;
+  const coverTextDelete = keyframes`
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+`;
   const cover = css`
     font-family: "Sour Gummy", sans-serif;
     position: fixed;
@@ -53,7 +64,7 @@ const CoverPage = () => {
       font-size: 35px;
     }
     .inner {
-      animation: ${coverDelete} 0.1s 0.7s forwards;
+      animation: ${coverTextDelete} 0.1s 0.7s forwards;
     }
     span {
       opacity: 0;
@@ -101,8 +112,18 @@ const CoverPage = () => {
       animation: ${slideUp} 0.5s ease-in-out 0.7s forwards;
     }
   `;
+  const coverDisActive = css`
+    display: none;
+  `;
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(false);
+    }, 1200);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
-    <div css={cover}>
+    <div css={isVisible ? cover : coverDisActive}>
       <div className="inner">
         <span>W</span>
         <span>e</span>
