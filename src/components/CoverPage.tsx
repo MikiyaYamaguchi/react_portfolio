@@ -34,14 +34,6 @@ const CoverPage = () => {
 			opacity: 1;
 		}
 	`;
-  const coverTextDelete = keyframes`
-		0%{
-			opacity: 1;
-		}
-		100%{
-			opacity: 0;
-		}
-	`;
   const cover = css`
     font-family: "Sour Gummy", sans-serif;
     position: fixed;
@@ -61,10 +53,11 @@ const CoverPage = () => {
       font-size: 35px;
     }
     .inner {
-      animation: ${coverTextDelete} 0.1s 0.7s forwards;
+      animation: ${coverDelete} 0.1s 0.7s forwards;
     }
     span {
       opacity: 0;
+      animation: ${coverDelete} 0.1s 1.2s forwards;
       &:nth-child(1) {
         animation: ${coverTextActive} 0.1s ease-in-out 0s forwards;
       }
