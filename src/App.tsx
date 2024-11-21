@@ -1,6 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
+
 import "./assets/css/style.scss";
 
 import { BrowserRouter as Router } from "react-router-dom";
@@ -17,13 +20,15 @@ function App() {
     z-index: 0;
   `;
   return (
-    <Router>
-      <div css={App}>
-        <Header />
-        <MainContent />
-        <Footer />
-      </div>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <div css={App}>
+          <Header />
+          <MainContent />
+          <Footer />
+        </div>
+      </Router>
+    </Provider>
   );
 }
 
