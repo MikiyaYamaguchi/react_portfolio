@@ -283,7 +283,7 @@ const About = () => {
             <FadeIn>
               <h3>実務経験なし</h3>
               <p>
-                Vue.js・Nuxt.jsでのSPA・SSR開発、Node.jsでのサーバーサイドのプログラミング、PostgreSQLでのデータベース操作
+                Vue.js・Nuxt.jsでのSPA・SSR開発、Node.jsでのサーバーサイドのプログラミング、MySQL・PostgreSQLでのデータベース操作
               </p>
             </FadeIn>
           </div>
@@ -293,7 +293,7 @@ const About = () => {
             <FadeIn>
               <h3>言語</h3>
               <p>
-                HTML5、CSS3、JavaScript（Vue.js・Nuxt.js、React.js、Node.js）、TyepScript、PHP、PostgreSQL
+                HTML5、CSS3、JavaScript（Vue.js・Nuxt.js、React.js、Node.js）、TyepScript、PHP、MySQL、PostgreSQL
               </p>
             </FadeIn>
           </div>
