@@ -53,7 +53,7 @@ const CoverPage = () => {
     left: 0;
     right: 0;
     margin: auto;
-    z-index: 1;
+    z-index: 11;
     animation: ${coverDelete} 0s ease-in-out 1.2s forwards;
     display: flex;
     justify-content: center;
