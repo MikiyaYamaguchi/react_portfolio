@@ -235,6 +235,7 @@ const Header = () => {
                 href="https://x.com/mikiya32131569"
                 target="_blank"
                 className="link_x"
+                rel="noreferrer"
               >
                 <img src="/img/icon_x.png" alt="X" />
               </a>
@@ -242,6 +243,7 @@ const Header = () => {
                 href="https://github.com/MikiyaYamaguchi"
                 target="_blank"
                 className="link_github"
+                rel="noreferrer"
               >
                 <img src="/img/icon_github.png" alt="X" />
               </a>
