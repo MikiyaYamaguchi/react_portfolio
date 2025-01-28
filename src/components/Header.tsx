@@ -19,6 +19,12 @@ const Header = () => {
       width: 259px;
       height: 101px;
     }
+    @media screen and (max-width: 945px) {
+      img {
+        width: 200px;
+        height: auto;
+      }
+    }
     @media screen and (max-width: 767px) {
       img {
         width: 150px;
@@ -127,6 +133,14 @@ const Header = () => {
         }
         &:not(:first-of-type) {
           margin-left: 2em;
+        }
+      }
+    }
+    @media screen and (max-width: 945px) {
+      a {
+        font-size: 14px;
+        span {
+          font-size: 12px;
         }
       }
     }

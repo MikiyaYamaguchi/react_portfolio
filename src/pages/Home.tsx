@@ -5,6 +5,8 @@ import { useInView } from "react-intersection-observer";
 
 import CoverPage from "../components/CoverPage";
 
+import { Link } from "react-router-dom";
+
 const Home = () => {
   const mainVisual = css`
     position: relative;
@@ -61,6 +63,51 @@ const Home = () => {
       p {
         font-size: 34px;
         font-weight: bold;
+      }
+      .textWrap {
+        p {
+          font-size: 18px;
+          margin-bottom: 1.5em;
+          @media screen and (max-width: 767px) {
+            font-size: 16px;
+          }
+        }
+        ul {
+          padding-left: 0;
+          li {
+            font-size: 18px;
+            list-style: none;
+            @media screen and (max-width: 767px) {
+              font-size: 16px;
+            }
+            &:not(:last-child) {
+              margin-bottom: 0.5em;
+            }
+            a {
+              display: block;
+              position: relative;
+              text-decoration: none;
+              padding-left: 20px;
+              transition: 0.2s;
+              &:hover {
+                color: #808080;
+              }
+              &:before {
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-right: 2px solid #231f20;
+                border-top: 2px solid #231f20;
+                transform: rotate(45deg);
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+              }
+            }
+          }
+        }
       }
     }
     @media screen and (max-width: 767px) {
@@ -174,10 +221,24 @@ const Home = () => {
       }
     }
   `;
+  const MainTextAni2 = css`
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(-20px);
+  `;
+  const MainTextAniActive2 = css`
+    opacity: 1;
+    transform: translateX(0);
+    transition: 0.6s;
+    transition-delay: 3s;
+  `;
   const { ref: ref1, inView: inView1 } = useInView({
     triggerOnce: true,
   });
   const { ref: ref2, inView: inView2 } = useInView({
+    triggerOnce: true,
+  });
+  const { ref: ref3, inView: inView3 } = useInView({
     triggerOnce: true,
   });
   return (
@@ -226,6 +287,28 @@ const Home = () => {
             <span>t</span>
             <span>e</span>
           </p>
+          <div
+            className="textWrap"
+            ref={ref3}
+            css={inView3 ? MainTextAniActive2 : MainTextAni2}
+          >
+            <p>
+              山口幹矢のポートフォリオサイト
+              <br />
+              へようこそ！
+            </p>
+            <ul>
+              <li>
+                <Link to="/about">山口幹矢について</Link>
+              </li>
+              <li>
+                <Link to="/works">制作事例</Link>
+              </li>
+              <li>
+                <Link to="/contact">お問い合わせ</Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <CoverPage />
