@@ -29,8 +29,16 @@ h1 {
   font-size: 38px;
   letter-spacing: 0.1em;
   margin: 0 0 1.3em;
+  .sub_txt {
+    display: block !important;
+    font-size: 20px;
+    color: #696969;
+  }
   @media screen and (max-width: 767px) {
     font-size: 26px;
+    .sub_txt {
+      font-size: 16px;
+    }
   }
 }
 
@@ -146,6 +154,9 @@ section {
     }
   }
   @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 7%;
+    }
     .col {
       margin-bottom: 6%;
       &:last-child {
@@ -164,5 +175,22 @@ section {
 @media screen and (max-width: 767px) {
   .pc-only {
     display: none;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  tr {
+    th {
+      text-align: left;
+    }
+    th,
+    td {
+      border-bottom: 1px solid #707070;
+      border-bottom: 1px solid #707070;
+      padding: 0.7em;
+    }
   }
 }

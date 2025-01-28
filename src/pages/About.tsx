@@ -47,38 +47,91 @@ const About = () => {
       }
     }
   `;
+  const Table = css`
+    thead {
+      th {
+        &:nth-child(1) {
+          width: 23%;
+        }
+        &:nth-child(2) {
+          width: 15%;
+        }
+        &:nth-child(3) {
+          width: 62%;
+        }
+      }
+    }
+    @media screen and (max-width: 767px) {
+      th,
+      td {
+        font-size: 14px;
+        padding: 0.7em 0.4em;
+      }
+      thead {
+        th {
+          &:nth-child(1) {
+            width: 25%;
+          }
+          &:nth-child(2) {
+            width: 20%;
+          }
+          &:nth-child(3) {
+            width: 55%;
+          }
+        }
+      }
+    }
+  `;
   return (
     <div className="container">
       <h1>
         <AniTitle>
-          <span>A</span>
-          <span>b</span>
-          <span>o</span>
-          <span>u</span>
-          <span>t</span>
+          <span>山</span>
+          <span>口</span>
+          <span>幹</span>
+          <span>矢</span>
+          <span>に</span>
+          <span>つ</span>
+          <span>い</span>
+          <span>て</span>
+          <span className="sub_txt">About</span>
         </AniTitle>
       </h1>
       <section>
+        <h2>
+          <AniTitle>
+            <span>は</span>
+            <span>じ</span>
+            <span>め</span>
+            <span>に</span>
+          </AniTitle>
+        </h2>
         <div className="row">
           <div className="col span_12">
             <FadeIn>
               <p>
                 初めまして。
                 <br />
-                Webエンジニアをしております、Y.MIKIYAです。
+                Webエンジニアをしております、山口幹矢です。
                 <br />
-                Y.MIKIYAのポートフォリオサイトにお越しいただき、ありがとうございます。
+                現在は受託のホームページ制作会社でエンジニアをしています。
                 <br />
-                普段は都内のWeb制作会社に勤務しております。
+                主な業務は、中小から大手まで様々な企業のホームページやECサイトのコーディングを担当しています。
                 <br />
-                普段の業務では、コーポレートサイト制作や、ECサイト制作など、サイト制作のフロントエンド業務を行なっております。
+                担当する案件も医療・美容・飲食・教育・土木・建築・不動産など多岐にわたります。
+                <br />
+                HTML、CSSを用いたコーディングはもちろんのこと、JavaScriptやPHPなどを使ったプログラム構築も可能です。
+                <br />
+                コーディング業務に加え、会社の新規商材の開発にエンジニアとして携わったり、社内の業務の効率化を図るために、便利ツールの開発などもしています。
+                <br />
+                また、サブマネージャーとして、コーダーチームをまとめるようなこともしています。
                 <br />
                 <br />
                 エンジニア職になって、5年目になりますが、まだまだ未熟でわからないことも多いので、日々勉強に勤しんでおります。
                 <br />
-                このポートフォリオサイトでは、私の保有スキルや成果物などを掲載しております。
+                プライベートでは、本業ではあまり扱わないVueやReactなどの学習を行い、学んだ技術で成果物を作ったりしています。
                 <br />
-                このサイトはReact.jsで制作しました。
+                新しい技術を常に学び、エンジニアとしてできることを増やすことを意識して、日々邁進しております。
               </p>
             </FadeIn>
           </div>
@@ -87,13 +140,12 @@ const About = () => {
       <section>
         <h2>
           <AniTitle>
-            <span>P</span>
-            <span>r</span>
-            <span>o</span>
-            <span>f</span>
-            <span>i</span>
-            <span>l</span>
-            <span>e</span>
+            <span>プ</span>
+            <span>ロ</span>
+            <span>フ</span>
+            <span>ィ</span>
+            <span>ー</span>
+            <span>ル</span>
           </AniTitle>
         </h2>
         <div className="row">
@@ -149,13 +201,222 @@ const About = () => {
       <section>
         <h2>
           <AniTitle>
-            <span>H</span>
-            <span>i</span>
-            <span>s</span>
-            <span>t</span>
-            <span>o</span>
-            <span>r</span>
-            <span>y</span>
+            <span>ス</span>
+            <span>キ</span>
+            <span>ル</span>
+          </AniTitle>
+        </h2>
+        <div className="row">
+          <div className="col span_12">
+            <FadeIn>
+              <h3>言語</h3>
+              <table css={Table}>
+                <thead>
+                  <tr>
+                    <th>種類</th>
+                    <th>期間</th>
+                    <th>レベル</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>HTML、CSS（SASS）</td>
+                    <td>5年以上</td>
+                    <td>
+                      数多くのサイト制作経験を通じて、コーディングに一定の経験を積んできました。
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>JavaScript</td>
+                    <td>5年以上</td>
+                    <td>
+                      VanillaJSやjQueryでのプログラミングに一定の経験を積んできました。React（Next）やVue（Nuxt）での開発も可能で、NodeフレームワークのExpressによるREST
+                      API開発なども経験済みです。
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>TypeScript</td>
+                    <td>2年以上</td>
+                    <td>
+                      基本的なプログラムの構築が可能です。
+                      <br />
+                      VueやReactをTypeScriptで開発することが可能です。
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>PHP</td>
+                    <td>3年以上</td>
+                    <td>基本的なプログラムの構築が可能です。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </FadeIn>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col span_12">
+            <FadeIn>
+              <h3>フレームワーク・ライブラリ</h3>
+              <table css={Table}>
+                <thead>
+                  <tr>
+                    <th>種類</th>
+                    <th>期間</th>
+                    <th>レベル</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>jQuery</td>
+                    <td>5年以上</td>
+                    <td>
+                      数多くのサイト制作の中で、豊富なjQueryの使用経験があります。
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>React</td>
+                    <td>2年以上</td>
+                    <td>
+                      学習中ですが、自力で制作物を作ることが可能です。
+                      <br />
+                      本サイトもReactで制作しました。
+                      <br />
+                      また、実務でも使用経験があります。
+                      <br />
+                      （便利ツール開発）
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Next.js</td>
+                    <td>1年以上</td>
+                    <td>学習中です。自力で制作物を作ることが可能です。</td>
+                  </tr>
+                  <tr>
+                    <td>Vue.js</td>
+                    <td>2年以上</td>
+                    <td>
+                      学集中です。自力で制作物を作ることが可能です。
+                      <br />
+                      「Works」にて、制作物を掲載しています。
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Nuxt.js</td>
+                    <td>2年以上</td>
+                    <td>
+                      学集中です。自力で制作物を作ることが可能です。
+                      <br />
+                      「Works」にて、制作物を掲載しています。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </FadeIn>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col span_12">
+            <FadeIn>
+              <h3>データベース</h3>
+              <table css={Table}>
+                <thead>
+                  <tr>
+                    <th>種類</th>
+                    <th>期間</th>
+                    <th>レベル</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>MySQL</td>
+                    <td>3年以上</td>
+                    <td>基本的な環境構築とデータベース操作が可能です。</td>
+                  </tr>
+                  <tr>
+                    <td>PostgreSQL</td>
+                    <td>3年以上</td>
+                    <td>基本的な環境構築とデータベース操作が可能です。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </FadeIn>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col span_12">
+            <FadeIn>
+              <h3>CMS</h3>
+              <table css={Table}>
+                <thead>
+                  <tr>
+                    <th>種類</th>
+                    <th>期間</th>
+                    <th>レベル</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>WordPress</td>
+                    <td>5年以上</td>
+                    <td>
+                      数多くのサイト制作の中での、豊富な使用経験があります。
+                      <br />
+                      複雑なカスタマイズや拡張機能の開発、テーマ開発など、多様な開発経験があります。
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Shopify</td>
+                    <td>2年以上</td>
+                    <td>
+                      実務での制作経験があります。テーマ開発やカスタマイズの経験もあります。
+                      <br />
+                      テーマ開発では、顧客のユーザビリティを考えたセクション開発や機能実装を行いました。
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </FadeIn>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col span_12">
+            <FadeIn>
+              <h3>その他</h3>
+              <table css={Table}>
+                <thead>
+                  <tr>
+                    <th>種類</th>
+                    <th>期間</th>
+                    <th>レベル</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Git</td>
+                    <td>5年以上</td>
+                    <td>GitHubやGitLabの使用経験があります。</td>
+                  </tr>
+                  <tr>
+                    <td>PhotoShop・illustrator・XD</td>
+                    <td>5年以上</td>
+                    <td>基本的な操作のみ可能です。</td>
+                  </tr>
+                  <tr>
+                    <td>Figma</td>
+                    <td>1年以上</td>
+                    <td>基本的な操作のみ可能です。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>
+          <AniTitle>
+            <span>沿</span>
+            <span>革</span>
           </AniTitle>
         </h2>
         <div css={history}>
@@ -254,55 +515,6 @@ const About = () => {
                 <br />
                 通常の制作業務に加えて、チームのエンジニアのスキルアップの施策を行ったり、業務効率化ツールを開発したりなど、会社への貢献に尽力する。
               </p>
-            </FadeIn>
-          </div>
-        </div>
-      </section>
-      <section>
-        <h2>
-          <AniTitle>
-            <span>S</span>
-            <span>k</span>
-            <span>i</span>
-            <span>l</span>
-            <span>l</span>
-          </AniTitle>
-        </h2>
-        <div className="row">
-          <div className="col span_12">
-            <FadeIn>
-              <h3>実務経験あり</h3>
-              <p>
-                HTML・CSSコーディング、WordPressでのサイト制作、JavaScript（jQueryも使用）でのプログラミング、React.jsを使ったツール開発、PHPを使ったサーバーサイドのプログラミン、shopifyのテーマ制作
-              </p>
-            </FadeIn>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col span_12">
-            <FadeIn>
-              <h3>実務経験なし</h3>
-              <p>
-                Vue.js・Nuxt.jsでのSPA・SSR開発、Node.jsでのサーバーサイドのプログラミング、MySQL・PostgreSQLでのデータベース操作
-              </p>
-            </FadeIn>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col span_12">
-            <FadeIn>
-              <h3>言語</h3>
-              <p>
-                HTML5、CSS3、JavaScript（Vue.js・Nuxt.js、React.js、Node.js）、TyepScript、PHP、MySQL、PostgreSQL
-              </p>
-            </FadeIn>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col span_12">
-            <FadeIn>
-              <h3>その他スキル</h3>
-              <p>Gitの使用、PhotoShop・illustrator・XDの使用</p>
             </FadeIn>
           </div>
         </div>
