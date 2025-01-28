@@ -46,7 +46,7 @@ const CoverPage = () => {
 	}
 `;
   const cover = css`
-    font-family: "Sour Gummy", sans-serif;
+    font-family: "Quicksand", sans-serif;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -60,6 +60,7 @@ const CoverPage = () => {
     align-items: center;
     font-size: 50px;
     letter-spacing: 1.8px;
+    font-weight: 500;
     @media screen and (max-width: 767px) {
       font-size: 35px;
     }
