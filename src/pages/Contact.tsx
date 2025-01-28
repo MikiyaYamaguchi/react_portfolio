@@ -45,13 +45,13 @@ const Contact = () => {
     <div className="container">
       <h1>
         <AniTitle>
-          <span>C</span>
-          <span>o</span>
-          <span>n</span>
-          <span>t</span>
-          <span>a</span>
-          <span>c</span>
-          <span>t</span>
+          <span>お</span>
+          <span>問</span>
+          <span>い</span>
+          <span>合</span>
+          <span>わ</span>
+          <span>せ</span>
+          <span className="sub_txt">Contact</span>
         </AniTitle>
       </h1>
       <section>

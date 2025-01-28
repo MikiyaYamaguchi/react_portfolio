@@ -25,11 +25,11 @@ const Works = () => {
     <div className="container">
       <h1>
         <AniTitle>
-          <span>W</span>
-          <span>o</span>
-          <span>r</span>
-          <span>k</span>
-          <span>s</span>
+          <span>制</span>
+          <span>作</span>
+          <span>事</span>
+          <span>例</span>
+          <span className="sub_txt">Works</span>
         </AniTitle>
       </h1>
       <section>
