@@ -3,6 +3,7 @@
 		"id": 1,
 		"title": "Daily Up",
 		"context": "プログラミングなどに関して、勉強した知識を集積するために作ったブログサイト。React.jsやVue.js、Node.jsなど新しく学んだことを集積・アウトプット・共有するためのナレッジサイトとして作成しました。Google adsence広告が導入されています。",
+		"tec": "HTML/CSS/JavaScript/PHP/WordPress",
 		"img": "dailyupblog.jpg",
 		"url": "https://www.dailyupblog.com"
 	},
@@ -10,6 +11,7 @@
 		"id": 2,
 		"title": "買い物メモ",
 		"context": "Nuxt.jsで制作した買い物に役立つ便利アプリです。メモの内容はcookieに保存されます。メモの内容を他者へ共有することも可能です。",
+		"tec": "JavaScript/SASS/Nuxt/Express/PostgreSQL/Netlify/Heroku",
 		"img": "kaimonomemo.png",
 		"url": "https://www.kaimononosuke.com/kaimonomemo/"
 	},
@@ -17,6 +19,7 @@
 		"id": 3,
 		"title": "How is the weather in JP",
 		"context": "Vue.jsを使って何かしらアプリケーションを作ってみたかったので、勉強のために制作しました。OpenWeatherAPIを使用して、リアルタイムな天気情報を取得して表示しています。",
+		"tec": "JavaScript/SASS/Vue/Netlify",
 		"img": "howistheweather.jpg",
 		"url": "https://howistheweather-jp.netlify.app/#/"
 	},
@@ -24,6 +27,7 @@
 		"id": 4,
 		"title": "ポートフォリオサイト（旧）",
 		"context": "昔作ったポートフォリオサイトです。Nuxt.jsで作りました。",
+		"tec": "JavaScript/SASS/Nuxt/Netlify",
 		"img": "old_portfolio.png",
 		"url": "https://mikiya-yamaguchi-1503.netlify.app/"
 	}

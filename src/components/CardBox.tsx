@@ -4,11 +4,12 @@ import { css } from "@emotion/react";
 type Props = {
   title: string;
   context: string;
+  tec: string;
   img: string;
   url: string;
 };
 
-const CardBox = ({ title, context, img, url }: Props) => {
+const CardBox = ({ title, context, tec, img, url }: Props) => {
   const card = css`
     a {
       text-decoration: none !important;
@@ -42,8 +43,14 @@ const CardBox = ({ title, context, img, url }: Props) => {
         font-size: 16px;
         color: #707070;
         margin-top: 0;
+        margin-bottom: 0.5em;
         @media screen and (max-width: 767px) {
           font-size: 15px;
+        }
+        &.tec {
+          font-size: 14px;
+          margin-top: 0;
+          color: #a9a9a9;
         }
       }
       .title {
@@ -65,6 +72,7 @@ const CardBox = ({ title, context, img, url }: Props) => {
         </figure>
         <p className="title">{title}</p>
         <p>{context}</p>
+        <p className="tec">使用技術・環境：{tec}</p>
       </a>
     </div>
   );

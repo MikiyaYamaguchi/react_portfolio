@@ -10,6 +10,7 @@ interface Work {
   id: number;
   title: string;
   context: string;
+  tec: string;
   img: string;
   url: string;
 }
@@ -61,24 +62,69 @@ const Works = () => {
             </thead>
             <tbody>
               <tr>
-                <td>ANAグループ会社採用サイト</td>
+                <td>
+                  自社コーポレートサイトリニューアル
+                  <br />
+                  （株式会社アイフラッグ）
+                </td>
+                <td>コーディング</td>
+                <td>HTML/CSS、JavaScript、PHP、WordPress、Gulp</td>
+              </tr>
+              <tr>
+                <td>
+                  自社採用サイト制作
+                  <br />
+                  （株式会社アイフラッグ）
+                </td>
+                <td>コーディング、応募フォーム機能開発</td>
+                <td>
+                  HTML、CSS（SASS）、JavaScript、PHP、WordPress、MySQL、Gulp
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  関連会社コーポレートサイトリニューアル
+                  <br />
+                  （株式会社光通信）
+                </td>
+                <td>コーディング</td>
+                <td>HTML/CSS、JavaScript、Gulp</td>
+              </tr>
+              <tr>
+                <td>
+                  ANAグループ会社採用サイト制作
+                  <br />
+                  （ANAウィングフェローズ・ヴイ王子株式会社）
+                </td>
                 <td>コーディング</td>
                 <td>HTML/CSS、JavaScript、自社CMS</td>
               </tr>
               <tr>
-                <td>光通信株式会社コーポレートサイトリニューアル</td>
-                <td>コーディング</td>
-                <td>HTML/CSS、JavaScript、gulp</td>
-              </tr>
-              <tr>
-                <td>ナチュラルサプリミートECサイト</td>
+                <td>
+                  ペットフードECサイト
+                  <br />
+                  （株式会社ルイトモ）
+                </td>
                 <td>コーディング、テーマ開発</td>
                 <td>HTML/CSS、JavaScript、Liquid、shopify</td>
               </tr>
               <tr>
-                <td>株式会社アイフラッグサイトリニューアル</td>
-                <td>コーディング、応募フォーム機能開発</td>
-                <td>HTML/CSS、JavaScript、PHP、WordPress、gulp</td>
+                <td>
+                  スマホアプリゲーム公式サイト制作
+                  <br />
+                  （株式会社GrandSoft）
+                </td>
+                <td>コーディング</td>
+                <td>HTML、CSS（SASS）、JavaScript、Gulp</td>
+              </tr>
+              <tr>
+                <td>
+                  商品LPコーディング
+                  <br />
+                  （アートネイチャー）
+                </td>
+                <td>コーディング</td>
+                <td>HTML、CSS（SASS）、JavaScript、Gulp</td>
               </tr>
             </tbody>
           </table>
@@ -92,6 +138,7 @@ const Works = () => {
                 <CardBox
                   title={work.title}
                   context={work.context}
+                  tec={work.tec}
                   img={work.img}
                   url={work.url}
                 />
