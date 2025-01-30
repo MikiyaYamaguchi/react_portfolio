@@ -193,4 +193,39 @@ table {
       padding: 0.7em;
     }
   }
+  @media screen and (max-width: 767px) {
+    thead {
+      display: none;
+    }
+    tbody {
+      display: block;
+      width: 100%;
+      tr {
+        display: block;
+        width: 100%;
+        &:not(:last-child) {
+          margin-bottom: 5%;
+        }
+        th,
+        td {
+          display: block;
+          width: 100%;
+        }
+        td {
+          display: flex;
+          &:first-child {
+            font-weight: bold;
+          }
+          span {
+            display: block;
+            width: 66%;
+          }
+          .sp-table-label {
+            width: 30%;
+            margin-right: 4%;
+          }
+        }
+      }
+    }
+  }
 }

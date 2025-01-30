@@ -80,6 +80,19 @@ const About = () => {
           }
         }
       }
+      tbody {
+        tr {
+          td {
+            span {
+              display: block;
+              width: 76%;
+            }
+            .sp-table-label {
+              width: 20%;
+            }
+          }
+        }
+      }
     }
   `;
   return (
@@ -221,32 +234,56 @@ const About = () => {
                 <tbody>
                   <tr>
                     <td>HTML、CSS（SASS）</td>
-                    <td>5年以上</td>
                     <td>
-                      数多くのサイト制作経験を通じて、コーディングに一定の経験を積んできました。
+                      <span className="sp-only sp-table-label">期間</span>
+                      <span>5年以上</span>
+                    </td>
+                    <td>
+                      <span className="sp-only sp-table-label">レベル</span>
+                      <span>
+                        数多くのサイト制作経験を通じて、コーディングに一定の経験を積んできました。
+                      </span>
                     </td>
                   </tr>
                   <tr>
                     <td>JavaScript</td>
-                    <td>5年以上</td>
                     <td>
-                      VanillaJSやjQueryでのプログラミングに一定の経験を積んできました。React（Next）やVue（Nuxt）での開発も可能で、NodeフレームワークのExpressによるREST
-                      API開発なども経験済みです。
+                      <span className="sp-only sp-table-label">期間</span>
+                      <span>5年以上</span>
+                    </td>
+                    <td>
+                      <span className="sp-only sp-table-label">レベル</span>
+                      <span>
+                        VanillaJSやjQueryでのプログラミングに一定の経験を積んできました。React（Next）やVue（Nuxt）での開発も可能で、NodeフレームワークのExpressによるREST
+                        API開発なども経験済みです。
+                      </span>
                     </td>
                   </tr>
                   <tr>
                     <td>TypeScript</td>
-                    <td>2年以上</td>
                     <td>
-                      基本的なプログラムの構築が可能です。
-                      <br />
-                      VueやReactをTypeScriptで開発することが可能です。
+                      <span className="sp-only sp-table-label">期間</span>
+                      <span>2年以上</span>
+                    </td>
+                    <td>
+                      <span className="sp-only sp-table-label">レベル</span>
+                      <span>
+                        基本的なプログラムの構築が可能です。
+                        <br />
+                        VueやReactをTypeScriptで開発することが可能です。
+                      </span>
                     </td>
                   </tr>
                   <tr>
                     <td>PHP</td>
-                    <td>3年以上</td>
-                    <td>基本的なプログラムの構築が可能です。</td>
+                    <td>
+                      <span className="sp-only sp-table-label">期間</span>
+                      <span>3年以上</span>
+                    </td>
+                    <td>
+                      <span className="sp-only sp-table-label">レベル</span>
+                      <span>基本的なプログラムの構築が可能です。</span>
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -268,45 +305,77 @@ const About = () => {
                 <tbody>
                   <tr>
                     <td>jQuery</td>
-                    <td>5年以上</td>
                     <td>
-                      数多くのサイト制作の中で、豊富なjQueryの使用経験があります。
+                      <span className="sp-only sp-table-label">期間</span>
+                      <span>5年以上</span>
+                    </td>
+                    <td>
+                      <span className="sp-only sp-table-label">レベル</span>
+                      <span>
+                        数多くのサイト制作の中で、豊富なjQueryの使用経験があります。
+                      </span>
                     </td>
                   </tr>
                   <tr>
                     <td>React</td>
-                    <td>2年以上</td>
                     <td>
-                      学習中ですが、自力で制作物を作ることが可能です。
-                      <br />
-                      本サイトもReactで制作しました。
-                      <br />
-                      また、実務でも使用経験があります。
-                      <br />
-                      （便利ツール開発）
+                      <span className="sp-only sp-table-label">期間</span>
+                      <span>2年以上</span>
+                    </td>
+                    <td>
+                      <span className="sp-only sp-table-label">レベル</span>
+                      <span>
+                        学習中ですが、自力で制作物を作ることが可能です。
+                        <br />
+                        本サイトもReactで制作しました。
+                        <br />
+                        また、実務でも使用経験があります。
+                        <br />
+                        （便利ツール開発）
+                      </span>
                     </td>
                   </tr>
                   <tr>
                     <td>Next.js</td>
-                    <td>1年以上</td>
-                    <td>学習中です。自力で制作物を作ることが可能です。</td>
+                    <td>
+                      <span className="sp-only sp-table-label">期間</span>
+                      <span>1年以上</span>
+                    </td>
+                    <td>
+                      <span className="sp-only sp-table-label">レベル</span>
+                      <span>
+                        学習中です。自力で制作物を作ることが可能です。
+                      </span>
+                    </td>
                   </tr>
                   <tr>
                     <td>Vue.js</td>
-                    <td>2年以上</td>
                     <td>
-                      学集中です。自力で制作物を作ることが可能です。
-                      <br />
-                      「Works」にて、制作物を掲載しています。
+                      <span className="sp-only sp-table-label">期間</span>
+                      <span>2年以上</span>
+                    </td>
+                    <td>
+                      <span className="sp-only sp-table-label">レベル</span>
+                      <span>
+                        学集中です。自力で制作物を作ることが可能です。
+                        <br />
+                        「Works」にて、制作物を掲載しています。
+                      </span>
                     </td>
                   </tr>
                   <tr>
                     <td>Nuxt.js</td>
-                    <td>2年以上</td>
                     <td>
-                      学集中です。自力で制作物を作ることが可能です。
-                      <br />
-                      「Works」にて、制作物を掲載しています。
+                      <span className="sp-only sp-table-label">期間</span>
+                      <span>2年以上</span>
+                    </td>
+                    <td>
+                      <span className="sp-only sp-table-label">レベル</span>
+                      <span>
+                        学集中です。自力で制作物を作ることが可能です。
+                        <br />
+                        「Works」にて、制作物を掲載しています。
+                      </span>
                     </td>
                   </tr>
                 </tbody>
@@ -329,13 +398,29 @@ const About = () => {
                 <tbody>
                   <tr>
                     <td>MySQL</td>
-                    <td>3年以上</td>
-                    <td>基本的な環境構築とデータベース操作が可能です。</td>
+                    <td>
+                      <span className="sp-only sp-table-label">期間</span>
+                      <span>3年以上</span>
+                    </td>
+                    <td>
+                      <span className="sp-only sp-table-label">レベル</span>
+                      <span>
+                        基本的な環境構築とデータベース操作が可能です。
+                      </span>
+                    </td>
                   </tr>
                   <tr>
                     <td>PostgreSQL</td>
-                    <td>3年以上</td>
-                    <td>基本的な環境構築とデータベース操作が可能です。</td>
+                    <td>
+                      <span className="sp-only sp-table-label">期間</span>
+                      <span>3年以上</span>
+                    </td>
+                    <td>
+                      <span className="sp-only sp-table-label">レベル</span>
+                      <span>
+                        基本的な環境構築とデータベース操作が可能です。
+                      </span>
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -357,20 +442,32 @@ const About = () => {
                 <tbody>
                   <tr>
                     <td>WordPress</td>
-                    <td>5年以上</td>
                     <td>
-                      数多くのサイト制作の中での、豊富な使用経験があります。
-                      <br />
-                      複雑なカスタマイズや拡張機能の開発、テーマ開発など、多様な開発経験があります。
+                      <span className="sp-only sp-table-label">期間</span>
+                      <span>5年以上</span>
+                    </td>
+                    <td>
+                      <span className="sp-only sp-table-label">レベル</span>
+                      <span>
+                        数多くのサイト制作の中での、豊富な使用経験があります。
+                        <br />
+                        複雑なカスタマイズや拡張機能の開発、テーマ開発など、多様な開発経験があります。
+                      </span>
                     </td>
                   </tr>
                   <tr>
                     <td>Shopify</td>
-                    <td>2年以上</td>
                     <td>
-                      実務での制作経験があります。テーマ開発やカスタマイズの経験もあります。
-                      <br />
-                      テーマ開発では、顧客のユーザビリティを考えたセクション開発や機能実装を行いました。
+                      <span className="sp-only sp-table-label">期間</span>
+                      <span>2年以上</span>
+                    </td>
+                    <td>
+                      <span className="sp-only sp-table-label">レベル</span>
+                      <span>
+                        実務での制作経験があります。テーマ開発やカスタマイズの経験もあります。
+                        <br />
+                        テーマ開発では、顧客のユーザビリティを考えたセクション開発や機能実装を行いました。
+                      </span>
                     </td>
                   </tr>
                 </tbody>
@@ -393,18 +490,36 @@ const About = () => {
                 <tbody>
                   <tr>
                     <td>Git</td>
-                    <td>5年以上</td>
-                    <td>GitHubやGitLabの使用経験があります。</td>
+                    <td>
+                      <span className="sp-only sp-table-label">期間</span>
+                      <span>5年以上</span>
+                    </td>
+                    <td>
+                      <span className="sp-only sp-table-label">レベル</span>
+                      <span>GitHubやGitLabの使用経験があります。</span>
+                    </td>
                   </tr>
                   <tr>
                     <td>PhotoShop・illustrator・XD</td>
-                    <td>5年以上</td>
-                    <td>基本的な操作のみ可能です。</td>
+                    <td>
+                      <span className="sp-only sp-table-label">期間</span>
+                      <span>5年以上</span>
+                    </td>
+                    <td>
+                      <span className="sp-only sp-table-label">レベル</span>
+                      <span>基本的な操作のみ可能です。</span>
+                    </td>
                   </tr>
                   <tr>
                     <td>Figma</td>
-                    <td>1年以上</td>
-                    <td>基本的な操作のみ可能です。</td>
+                    <td>
+                      <span className="sp-only sp-table-label">期間</span>
+                      <span>1年以上</span>
+                    </td>
+                    <td>
+                      <span className="sp-only sp-table-label">レベル</span>
+                      <span>基本的な操作のみ可能です。</span>
+                    </td>
                   </tr>
                 </tbody>
               </table>

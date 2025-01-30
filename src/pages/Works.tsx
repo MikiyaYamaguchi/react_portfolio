@@ -1,3 +1,6 @@
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
+
 import CardBox from "../components/CardBox";
 import data from "../json/works.json";
 
@@ -16,6 +19,15 @@ interface Work {
 }
 
 const Works = () => {
+  const Table = css`
+    @media screen and (max-width: 767px) {
+      th,
+      td {
+        font-size: 14px;
+        padding: 0.7em 0.4em;
+      }
+    }
+  `;
   const [works, setWorks] = useState<Work[]>([]);
   useEffect(() => {
     // JSONデータをステートにセット
@@ -52,7 +64,7 @@ const Works = () => {
             <br />
             下記に幾つかの制作例を、表形式で記載しておきます。
           </p>
-          <table>
+          <table css={Table}>
             <thead>
               <tr>
                 <th>案件名</th>
@@ -67,8 +79,14 @@ const Works = () => {
                   <br />
                   （株式会社アイフラッグ）
                 </td>
-                <td>コーディング</td>
-                <td>HTML/CSS、JavaScript、PHP、WordPress、Gulp</td>
+                <td>
+                  <span className="sp-only sp-table-label">担当業務</span>
+                  <span>コーディング</span>
+                </td>
+                <td>
+                  <span className="sp-only sp-table-label">使用技術・環境</span>
+                  <span>HTML/CSS、JavaScript、PHP、WordPress、Gulp</span>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -76,9 +94,15 @@ const Works = () => {
                   <br />
                   （株式会社アイフラッグ）
                 </td>
-                <td>コーディング、応募フォーム機能開発</td>
                 <td>
-                  HTML、CSS（SASS）、JavaScript、PHP、WordPress、MySQL、Gulp
+                  <span className="sp-only sp-table-label">担当業務</span>
+                  <span>コーディング、応募フォーム機能開発</span>
+                </td>
+                <td>
+                  <span className="sp-only sp-table-label">使用技術・環境</span>
+                  <span>
+                    HTML、CSS（SASS）、JavaScript、PHP、WordPress、MySQL、Gulp
+                  </span>
                 </td>
               </tr>
               <tr>
@@ -87,8 +111,14 @@ const Works = () => {
                   <br />
                   （株式会社光通信）
                 </td>
-                <td>コーディング</td>
-                <td>HTML/CSS、JavaScript、Gulp</td>
+                <td>
+                  <span className="sp-only sp-table-label">担当業務</span>
+                  <span>コーディング</span>
+                </td>
+                <td>
+                  <span className="sp-only sp-table-label">使用技術・環境</span>
+                  <span>HTML/CSS、JavaScript、Gulp</span>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -96,8 +126,14 @@ const Works = () => {
                   <br />
                   （ANAウィングフェローズ・ヴイ王子株式会社）
                 </td>
-                <td>コーディング</td>
-                <td>HTML/CSS、JavaScript、自社CMS</td>
+                <td>
+                  <span className="sp-only sp-table-label">担当業務</span>
+                  <span>コーディング</span>
+                </td>
+                <td>
+                  <span className="sp-only sp-table-label">使用技術・環境</span>
+                  <span>HTML/CSS、JavaScript、自社CMS</span>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -105,8 +141,14 @@ const Works = () => {
                   <br />
                   （株式会社ルイトモ）
                 </td>
-                <td>コーディング、テーマ開発</td>
-                <td>HTML/CSS、JavaScript、Liquid、shopify</td>
+                <td>
+                  <span className="sp-only sp-table-label">担当業務</span>
+                  <span>コーディング、テーマ開発</span>
+                </td>
+                <td>
+                  <span className="sp-only sp-table-label">使用技術・環境</span>
+                  <span>HTML/CSS、JavaScript、Liquid、shopify</span>
+                </td>
               </tr>
               <tr>
                 <td>
@@ -114,17 +156,29 @@ const Works = () => {
                   <br />
                   （株式会社GrandSoft）
                 </td>
-                <td>コーディング</td>
-                <td>HTML、CSS（SASS）、JavaScript、Gulp</td>
+                <td>
+                  <span className="sp-only sp-table-label">担当業務</span>
+                  <span>コーディング</span>
+                </td>
+                <td>
+                  <span className="sp-only sp-table-label">使用技術・環境</span>
+                  <span>HTML、CSS（SASS）、JavaScript、Gulp</span>
+                </td>
               </tr>
               <tr>
                 <td>
-                  商品LPコーディング
+                  新商品LP制作
                   <br />
                   （アートネイチャー）
                 </td>
-                <td>コーディング</td>
-                <td>HTML、CSS（SASS）、JavaScript、Gulp</td>
+                <td>
+                  <span className="sp-only sp-table-label">担当業務</span>
+                  <span>コーディング</span>
+                </td>
+                <td>
+                  <span className="sp-only sp-table-label">使用技術・環境</span>
+                  <span>HTML、CSS（SASS）、JavaScript、Gulp</span>
+                </td>
               </tr>
             </tbody>
           </table>
