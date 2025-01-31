@@ -233,7 +233,7 @@ const About = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>HTML、CSS（SASS）</td>
+                    <td>HTML、CSS（SCSS）</td>
                     <td>
                       <span className="sp-only sp-table-label">期間</span>
                       <span>5年以上</span>

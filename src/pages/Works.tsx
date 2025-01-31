@@ -101,7 +101,7 @@ const Works = () => {
                 <td>
                   <span className="sp-only sp-table-label">使用技術・環境</span>
                   <span>
-                    HTML、CSS（SASS）、JavaScript、PHP、WordPress、MySQL、Gulp
+                    HTML、CSS（SCSS）、JavaScript、PHP、WordPress、MySQL、Gulp
                   </span>
                 </td>
               </tr>
@@ -162,7 +162,7 @@ const Works = () => {
                 </td>
                 <td>
                   <span className="sp-only sp-table-label">使用技術・環境</span>
-                  <span>HTML、CSS（SASS）、JavaScript、Gulp</span>
+                  <span>HTML、CSS（SCSS）、JavaScript、Gulp</span>
                 </td>
               </tr>
               <tr>
@@ -177,7 +177,7 @@ const Works = () => {
                 </td>
                 <td>
                   <span className="sp-only sp-table-label">使用技術・環境</span>
-                  <span>HTML、CSS（SASS）、JavaScript、Gulp</span>
+                  <span>HTML、CSS（SCSS）、JavaScript、Gulp</span>
                 </td>
               </tr>
             </tbody>
