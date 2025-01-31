@@ -185,6 +185,30 @@ const Works = () => {
         </FadeIn>
       </section>
       <section>
+        <h2>
+          <AniTitle>
+            <span>実</span>
+            <span>務</span>
+            <span>以</span>
+            <span>外</span>
+            <span>で</span>
+            <span>の</span>
+            <span>制</span>
+            <span>作</span>
+            <span>例</span>
+          </AniTitle>
+        </h2>
+        <div className="row row_inline">
+          <FadeIn>
+            <p>
+              実務以外のプライベートで制作したサイトやWebアプリケーションなどもご紹介します。
+              <br />
+              個人的に学んだことを活かして制作しました。
+              <br />
+              業務ではあまり使用しないReactやVueなどをメインに使い、制作しています。
+            </p>
+          </FadeIn>
+        </div>
         <div className="row row_inline">
           {works.map((work) => (
             <div className="col span_6" key={work.id}>
