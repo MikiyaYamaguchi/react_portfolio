@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <footer>
       <div css={copyRight}>
-        <p>Copyright © Y.MIKIYA.COM All Rights Reserved.</p>
+        <p>Copyright © 山口幹矢 All Rights Reserved.</p>
       </div>
     </footer>
   );
