@@ -550,7 +550,7 @@ const About = () => {
           <div className="content">
             <FadeIn>
               <p className="year">2012年</p>
-              <p className="context">高校でも相変わらず、テニス部に所属。</p>
+              <p className="context">明治学院高等学校へ進学。</p>
             </FadeIn>
           </div>
           <div className="content">
@@ -569,7 +569,7 @@ const About = () => {
               <p className="context">
                 就活の最中、web制作に興味を抱く。
                 <br />
-                HTML5とCSS、JavaScriptを独学で学び始める。
+                HTML5とCSS3、JavaScriptを独学で学び始める。
               </p>
             </FadeIn>
           </div>
@@ -577,22 +577,18 @@ const About = () => {
             <FadeIn>
               <p className="year">2019年</p>
               <p className="context">
-                都内のweb制作会社に新卒で入社する。
+                都内のホームページ制作会社に新卒で入社する。
                 <br />
                 自由で学びやすい環境を求め、転職を決意。
                 <br />
-                転職活動の末、現在のweb制作会社へ入社する。
+                転職活動の末、現在のホームページ制作会社へ入社する。
               </p>
             </FadeIn>
           </div>
           <div className="content">
             <FadeIn>
               <p className="year">2020年</p>
-              <p className="context">
-                コロナの影響でリモートワークになる。
-                <br />
-                学べる時間が増えたため、vue.jsやreact.jsなどのJavaScriptのフレームワークを勉強し始める。
-              </p>
+              <p className="context">コロナの影響でリモートワークになる。</p>
             </FadeIn>
           </div>
           <div className="content">
@@ -609,8 +605,7 @@ const About = () => {
                 </a>
                 」を制作する。
                 <br />
-                node.jsでのWeb
-                API制作やPostgreSQLでのデータベース構築など、バックエンド分野の勉強も始める。
+                JavaScriptのフレームワークであるVueの学習を始める。
               </p>
             </FadeIn>
           </div>
@@ -618,8 +613,15 @@ const About = () => {
             <FadeIn>
               <p className="year">2022年</p>
               <p className="context">
-                勉強中のvue.jsやnode.jsなどを用いてアプリケーションやポートフォリオの制作などに勤しむ。
+                勉強中のVueやNuxtなどを用いてアプリケーションやポートフォリオの制作などに勤しむ。
+                <br />
               </p>
+            </FadeIn>
+          </div>
+          <div className="content">
+            <FadeIn>
+              <p className="year">2023年</p>
+              <p className="context">Reactの学習を始める。</p>
             </FadeIn>
           </div>
           <div className="content">
@@ -629,6 +631,8 @@ const About = () => {
                 会社にて、サブマネージャーに昇格。
                 <br />
                 通常の制作業務に加えて、チームのエンジニアのスキルアップの施策を行ったり、業務効率化ツールを開発したりなど、会社への貢献に尽力する。
+                <br />
+                Nextの学習を始める。
               </p>
             </FadeIn>
           </div>
