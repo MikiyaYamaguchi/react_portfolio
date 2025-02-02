@@ -137,7 +137,7 @@ const Works = () => {
               </tr>
               <tr>
                 <td>
-                  ペットフードECサイト
+                  ペットフードECサイト制作
                   <br />
                   （株式会社ルイトモ）
                 </td>
@@ -167,17 +167,19 @@ const Works = () => {
               </tr>
               <tr>
                 <td>
-                  新商品LP制作
+                  総合アミューズメント施設公式サイトリニューアル
                   <br />
-                  （アートネイチャー）
+                  （株式会社E.F.）
                 </td>
                 <td>
                   <span className="sp-only sp-table-label">担当業務</span>
-                  <span>コーディング</span>
+                  <span>コーディング、テーマ開発</span>
                 </td>
                 <td>
                   <span className="sp-only sp-table-label">使用技術・環境</span>
-                  <span>HTML、CSS（SCSS）、JavaScript、Gulp</span>
+                  <span>
+                    HTML、CSS（SCSS）、JavaScript、Liquid、Shopify、Gulp
+                  </span>
                 </td>
               </tr>
             </tbody>
