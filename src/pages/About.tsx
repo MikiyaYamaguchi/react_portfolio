@@ -339,7 +339,7 @@ const About = () => {
                     <td>Next.js</td>
                     <td>
                       <span className="sp-only sp-table-label">期間</span>
-                      <span>1年以上</span>
+                      <span>1年未満</span>
                     </td>
                     <td>
                       <span className="sp-only sp-table-label">レベル</span>
@@ -514,7 +514,7 @@ const About = () => {
                     <td>Figma</td>
                     <td>
                       <span className="sp-only sp-table-label">期間</span>
-                      <span>1年以上</span>
+                      <span>1年未満</span>
                     </td>
                     <td>
                       <span className="sp-only sp-table-label">レベル</span>
