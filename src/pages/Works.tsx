@@ -60,7 +60,7 @@ const Works = () => {
         </h2>
         <FadeIn>
           <p>
-            現職での制作例は、著作権の観点からURLやキャプチャの公開は控えさせていただきます。
+            現職での制作例は、著作権の観点からクライアントの社名やURLやキャプチャの公開は控えさせていただきます。
             <br />
             下記に幾つかの制作例を、表形式で記載しておきます。
           </p>
@@ -74,11 +74,7 @@ const Works = () => {
             </thead>
             <tbody>
               <tr>
-                <td>
-                  自社コーポレートサイトリニューアル
-                  <br />
-                  （株式会社アイフラッグ）
-                </td>
+                <td>自社コーポレートサイトリニューアル</td>
                 <td>
                   <span className="sp-only sp-table-label">担当業務</span>
                   <span>コーディング</span>
@@ -89,11 +85,7 @@ const Works = () => {
                 </td>
               </tr>
               <tr>
-                <td>
-                  自社採用サイト制作
-                  <br />
-                  （株式会社アイフラッグ）
-                </td>
+                <td>自社採用サイト制作</td>
                 <td>
                   <span className="sp-only sp-table-label">担当業務</span>
                   <span>コーディング、応募フォーム機能開発</span>
@@ -106,11 +98,7 @@ const Works = () => {
                 </td>
               </tr>
               <tr>
-                <td>
-                  関連会社コーポレートサイトリニューアル
-                  <br />
-                  （株式会社光通信）
-                </td>
+                <td>関連会社コーポレートサイトリニューアル</td>
                 <td>
                   <span className="sp-only sp-table-label">担当業務</span>
                   <span>コーディング</span>
@@ -121,11 +109,7 @@ const Works = () => {
                 </td>
               </tr>
               <tr>
-                <td>
-                  ANAグループ会社採用サイト制作
-                  <br />
-                  （ANAウィングフェローズ・ヴイ王子株式会社）
-                </td>
+                <td>某航空グループ会社採用サイト制作</td>
                 <td>
                   <span className="sp-only sp-table-label">担当業務</span>
                   <span>コーディング</span>
@@ -136,11 +120,7 @@ const Works = () => {
                 </td>
               </tr>
               <tr>
-                <td>
-                  ペットフードECサイト制作
-                  <br />
-                  （株式会社ルイトモ）
-                </td>
+                <td>ペットフードECサイト制作</td>
                 <td>
                   <span className="sp-only sp-table-label">担当業務</span>
                   <span>コーディング、テーマ開発</span>
@@ -151,11 +131,7 @@ const Works = () => {
                 </td>
               </tr>
               <tr>
-                <td>
-                  スマホアプリゲーム公式サイト制作
-                  <br />
-                  （株式会社GrandSoft）
-                </td>
+                <td>スマホアプリゲーム公式サイト制作</td>
                 <td>
                   <span className="sp-only sp-table-label">担当業務</span>
                   <span>コーディング</span>
@@ -166,20 +142,14 @@ const Works = () => {
                 </td>
               </tr>
               <tr>
-                <td>
-                  総合アミューズメント施設公式サイトリニューアル
-                  <br />
-                  （株式会社E.F.）
-                </td>
+                <td>総合アミューズメント施設公式サイトリニューアル</td>
                 <td>
                   <span className="sp-only sp-table-label">担当業務</span>
                   <span>コーディング、テーマ開発</span>
                 </td>
                 <td>
                   <span className="sp-only sp-table-label">使用技術・環境</span>
-                  <span>
-                    HTML、CSS（SCSS）、JavaScript、Liquid、Shopify、Gulp
-                  </span>
+                  <span>HTML、CSS（SCSS）、JavaScript、Liquid、Shopify</span>
                 </td>
               </tr>
             </tbody>
