@@ -11,7 +11,7 @@
 		"id": 1,
 		"title": "My Moview Review",
 		"context": "Next.jsを用いて作った映画レビューサイト。フロントエンドからバックエンドまで全てNext.jsで作ったフルスタックアプリケーションです。ユーザー認証機能や外部映画情報取得API（TMDb API）との連携、絞り込み検索機能なども実装しました。",
-		"tec": "HTML/CSS/JavaScript/PHP/WordPress",
+		"tec": "JavaScript/SASS/Next/MongDB/Vercel/TMDb API",
 		"img": "my-movie-review.png",
 		"url": "https://my-movie-review.vercel.app/"
 	},
