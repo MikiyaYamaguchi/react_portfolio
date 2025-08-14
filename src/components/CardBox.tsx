@@ -18,6 +18,7 @@ const CardBox = ({ title, context, tec, img, url }: Props) => {
         height: 0;
         padding-top: 65%;
         overflow: hidden;
+        border: 1px solid #ccc;
         img {
           position: absolute;
           top: 0;
