@@ -172,9 +172,9 @@ const About = () => {
           <div className="col span_6">
             <FadeIn delay={500}>
               <p css={nameTxt}>Y.MIKIYA</p>
-              <p>職種 : Webエンジニア（フロントエンド）</p>
+              <p>職種 : Webエンジニア・コーダー</p>
               <p>所在地 : 千葉県</p>
-              <p>年齢：28</p>
+              <p>年齢：29</p>
               <p>出身大学：学習院大学（史学科）</p>
               <p>趣味：映画鑑賞、筋トレ</p>
               <p>
@@ -200,11 +200,11 @@ const About = () => {
               <p>
                 技術ブログ：
                 <a
-                  href="https://www.dailyupblog.com/"
+                  href="https://www.my-nombiri-tec-blog.jp/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  https://www.dailyupblog.com/
+                  https://www.my-nombiri-tec-blog.jp/
                 </a>
               </p>
             </FadeIn>
