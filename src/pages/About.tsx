@@ -317,7 +317,7 @@ const About = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td>React</td>
+                    <td>React.js</td>
                     <td>
                       <span className="sp-only sp-table-label">期間</span>
                       <span>2年以上</span>
